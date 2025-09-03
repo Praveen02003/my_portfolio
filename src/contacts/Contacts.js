@@ -20,7 +20,7 @@ export const Contacts = () => {
             <img src={contactlogo} alt="contact" className='contactimage'/>
           </div>
           <div class="col">
-            <h1 className='h1'>Contact Details</h1>
+            <h1 className='contact'>Contact Details</h1>
             <h3 className='h3'>Location: Madurai, India</h3>
             <h3 className='h3'>Email: praveen.aeropilot@gmail.com</h3>
             <h3 className='h3'>Phone: +91 93605 85253</h3>  

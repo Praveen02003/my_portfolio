@@ -35,8 +35,8 @@ export const Home = () => {
                 </div>
                 
                 <div className="col">
-                    <div id='image1'>
-                        <div id='image2'>
+                    <div>
+                        <div>
                             <img src={image} alt="img" id='image'/>
                         </div>
                     </div>

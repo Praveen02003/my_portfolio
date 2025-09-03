@@ -9,7 +9,7 @@ export const Projects = () => {
       <br />
       <hr />
       <div>
-        <h1 className='h1'>Projects</h1>
+        <h1 className='project'>Projects</h1>
       </div>
       <div className='border'>
         <h1 className='h1'>Food Ordering App</h1>

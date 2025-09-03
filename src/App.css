@@ -43,19 +43,14 @@
 #image{
     height: 700px;
     width: 650px;
-    border-radius: 1200px;
+    border-radius: 200px;
+    margin-top: 25px;
 }
 #image1{
-    background-color: #435174;
     height: 700px;
     width: 650px;
-    border-radius: 245px;
-}
-#image2{
-    height: 500px;
-    width: 550px;
-    border-radius: 1200px;
-    margin-top: 55px;
+    border-radius: 200px;
+    margin-top: 25px;
 }
 #hr{
     width: 100px;
@@ -160,6 +155,21 @@
     text-align: center;
     font-style: italic;
 }
+.skill{
+    font-size: 35px;
+    text-align: center;
+    font-style: italic;
+}
+.project{
+    font-size: 35px;
+    text-align: center;
+    font-style: italic;
+}
+.contact{
+    font-size: 35px;
+    text-align: center;
+    font-style: italic;
+}
 .h2{
     text-align: center;
     font-style: italic;
@@ -208,4 +218,107 @@
 .contactimage{
     height: 800px;
     width: 650px;
+}
+@media screen and (max-width: 480px)
+{
+      #list1>h3{
+        font-size: 25px;
+        margin-left: 15px;
+        display: block;
+      }
+      #list2{
+        margin-left: 30px;
+        display: block;
+        padding-top: 70px;
+      }
+      #list2>h3{
+        display: block;
+      }
+      #list1{
+        width: 200%;
+        height: 35%;
+        border-radius: 15px;
+      
+      }
+      #h2{
+        margin-top: 350px;
+        font-size: 35px;
+      }
+      #name{
+        font-size: 105px;
+        margin-top: 10px;
+      }
+      #image{
+        height: 250px;
+        width: 250px;
+        margin-left: 65px;
+        margin-top: 20px;
+        border-radius: 50px;
+      }
+      #image1{
+        height: 250px;
+        width: 250px;
+        margin-left: 60px;
+        margin-top: 300px;
+        border-radius: 50px;
+      }
+      .h21{
+        margin-left: 120px;
+      }
+      #mail1{
+        font-size: 25px;
+      }
+      #number1{
+        font-size: 25px;
+      }
+      .about{
+        display: none;
+      }
+      .about2{
+        font-size: 35px;
+        margin-left: 35px;
+        margin-right: 0px;
+        padding-left: 0px;
+        line-height: normal;
+      }
+      .list1{
+        margin: 0px;
+      }
+      .skill{
+        margin-top: 420px;
+        padding-right: 10px;
+      }
+      .logo1{
+        display: inline-block;
+        grid-template-columns: repeat(1);
+      }
+      .logo2{
+        padding: 0%;
+        margin-top: 20px;
+        margin-left: 60px;
+        margin-right: 245px;
+      }
+      .skilllogo{
+        padding-top: 20px;
+        padding-left: 0px;
+      }
+      .project{
+        margin-top: 280px;
+      }
+      .list{
+        margin: 0%;
+        padding-left: 145px;
+      }
+      .contactimage{
+        margin-top: 250px;
+        height: 350px;
+        width: 350px;
+      }
+      #input{
+        margin-left: 75px;
+      }
+      #button{
+        margin-left: 150px;
+      }
+
 }

@@ -17,7 +17,7 @@ export const Skills = () => {
       <br />
       <br />
       <hr />
-      <h1 className='h1'>Skills</h1>
+      <h1 className='skill'>Skills</h1>
       <hr />
       <div className='logo1'>
         <div className='logo2'>
