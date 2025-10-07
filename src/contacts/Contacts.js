@@ -1,5 +1,5 @@
 import React from 'react'
-import '../App.css'
+import '../contacts/Contacts.css'
 import contactlogo from '../Assets/contact.jpg'
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import TextField from '@mui/material/TextField';
@@ -8,34 +8,33 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 export const Contacts = () => {
   return (
-    <div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <hr />
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <img src={contactlogo} alt="contact" className='contactimage'/>
+    <div className="contacts-page">
+      <div className="contact-container">
+        <div className="contact-image-wrapper">
+          <div className="neon-rhombus"></div>
+          <img src={contactlogo} alt="contact" className="contactimage" />
+        </div>
+        <div className="contact-info">
+          <h1>Contact Me</h1>
+          <h3>Location: Madurai, India</h3>
+          <h3>Email: praveen.aeropilot@gmail.com</h3>
+          <h3>Phone: +91 93605 85253</h3>
+
+          <h2>Social Links</h2>
+          <div className="social-links">
+            <a href="https://www.linkedin.com/in/praveen-j19/">LinkedIn</a>
+            <a href="https://github.com/Praveen02003">GitHub</a>
           </div>
-          <div class="col">
-            <h1 className='contact'>Contact Details</h1>
-            <h3 className='h3'>Location: Madurai, India</h3>
-            <h3 className='h3'>Email: praveen.aeropilot@gmail.com</h3>
-            <h3 className='h3'>Phone: +91 93605 85253</h3>  
-            <h1 className='h1'>Socialmedia Links</h1>
-            <h2 className='h2'><a href="https://www.linkedin.com/in/praveen-j19/">LinkedIn</a></h2>
-            <h2 className='h2'><a href="https://github.com/Praveen02003">GitHub</a></h2>
-            <h3 className='h3'>"Feel free to reach out for collaboration, job opportunities, or just to say hi.”</h3>
-            <div id='input'>
-              <TextField variant="outlined" type="text" />
-            </div>
-            <br />
-            <Button variant="contained" id='button'>Send</Button>
+
+          <h3>"Feel free to reach out for collaboration, job opportunities, or just to say hi.”</h3>
+
+          <div className="contact-form">
+            <TextField variant="outlined" placeholder="Your message" fullWidth />
+            <Button variant="contained" id="send-button">Send</Button>
           </div>
         </div>
       </div>
     </div>
+
   )
 }

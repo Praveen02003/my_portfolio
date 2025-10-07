@@ -1,20 +1,21 @@
 import React from 'react'
-import '../App.css'
+import '../Headers/Headers.css'
 import { useNavigate } from 'react-router-dom'
+
 export const Header = () => {
-  const navigate=useNavigate()
+  const navigate = useNavigate()
   return (
-    <div id='head'>
-        <div id='list1'>
-            <h3>Praveen</h3>
-            <div id='list2'>
-                <h3 onClick={()=>{navigate('/')}}>Home</h3>
-                <h3 onClick={()=>{navigate('/about')}}>About</h3>
-                <h3 onClick={()=>{navigate('/skills')}}>Skills</h3>
-                <h3 onClick={()=>{navigate('/projects')}}>My Projects</h3>
-                <h3 onClick={()=>{navigate('/contact')}}>Contacts</h3>
-            </div>
-        </div>
-    </div>
+    <header className="header-colorful">
+      <div className="header-container-colorful">
+        <h3 className="header-logo-colorful" onClick={() => navigate('/')}>Praveen</h3>
+        <nav className="header-nav-colorful">
+          <h3 className="nav-item-colorful" onClick={() => navigate('/')}>Home</h3>
+          <h3 className="nav-item-colorful" onClick={() => navigate('/about')}>About</h3>
+          <h3 className="nav-item-colorful" onClick={() => navigate('/skills')}>Skills</h3>
+          <h3 className="nav-item-colorful" onClick={() => navigate('/projects')}>My Projects</h3>
+          <h3 className="nav-item-colorful" onClick={() => navigate('/contact')}>Contacts</h3>
+        </nav>
+      </div>
+    </header>
   )
 }

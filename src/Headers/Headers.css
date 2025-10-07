@@ -1,0 +1,168 @@
+/* ===================================
+   NEXT-GEN HEADER (PREMIUM PORTFOLIO)
+   =================================== */
+
+.header-colorful {
+  position: flex;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgb(1, 13, 37);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(56, 189, 248, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+  animation: headerFadeIn 0.8s ease;
+}
+
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================
+   HEADER CONTAINER
+   ========================== */
+.header-container-colorful {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 18px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ==========================
+   LOGO DESIGN
+   ========================== */
+.header-logo-colorful {
+  font-size: 1.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6, #38bdf8);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+  animation: gradientFlow 6s linear infinite;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.header-logo-colorful:hover {
+  transform: scale(1.08);
+  text-shadow: 0 0 25px rgba(139, 92, 246, 0.7);
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* ==========================
+   NAVIGATION BAR
+   ========================== */
+.header-nav-colorful {
+  display: flex;
+  gap: 35px;
+  align-items: center;
+}
+
+.nav-item-colorful {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #cbd5e1;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+/* underline + glow hover */
+.nav-item-colorful::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0%;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, #38bdf8, #8b5cf6);
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+  transition: width 0.3s ease;
+}
+
+.nav-item-colorful:hover::after {
+  width: 100%;
+}
+
+.nav-item-colorful:hover {
+  color: #38bdf8;
+  transform: translateY(-2px);
+  text-shadow: 0 0 12px rgba(56, 189, 248, 0.6);
+}
+
+/* Active item (optional, if you set via NavLink or state) */
+.nav-item-colorful.active {
+  color: #38bdf8;
+  text-shadow: 0 0 15px rgba(56, 189, 248, 0.8);
+}
+.nav-item-colorful.active::after {
+  width: 100%;
+}
+
+/* ==========================
+   SCROLL EFFECT (SHRINK HEADER)
+   ========================== */
+.header-colorful.scrolled {
+  background: rgba(15, 23, 42, 0.9);
+  padding: 12px 8%;
+  box-shadow: 0 4px 25px rgba(56, 189, 248, 0.15);
+  transform: translateY(0);
+}
+
+/* ==========================
+   MOBILE MENU
+   ========================== */
+@media (max-width: 900px) {
+  .header-container-colorful {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .header-nav-colorful {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 22px;
+  }
+
+  .nav-item-colorful {
+    font-size: 1rem;
+  }
+
+  .header-logo-colorful {
+    font-size: 1.6rem;
+  }
+}
+
+/* subtle hover glow */
+@keyframes glowPulse {
+  0% {
+    text-shadow: 0 0 5px rgba(56, 189, 248, 0.2);
+  }
+  50% {
+    text-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(56, 189, 248, 0.2);
+  }
+}
