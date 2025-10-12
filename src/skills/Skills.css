@@ -1,19 +1,19 @@
-/* General Page Styling */
+/* ====== Skills Page Container ====== */
 .skills-page {
   padding: 10px 20px;
-  background: #121212; /* Dark background */
+  background: #20404a; /* Dark professional background */
   min-height: 100vh;
   font-family: 'Poppins', sans-serif;
   color: #e0e0e0;
   text-align: center;
 }
 
-/* Page Title */
+/* ====== Page Title ====== */
 .skill {
   font-size: 3rem;
-  color: #00d4ff; /* Neon accent */
+  color: #f8f8f8; /* Neon accent */
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .skills-page hr {
@@ -25,73 +25,138 @@
   border-radius: 2px;
 }
 
-/* Skills Container */
+/* ====== Skills Container ====== */
 .skills-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
+  gap: 35px;
   justify-items: center;
+  padding: 0 10px;
 }
 
-/* Skill Card */
-/* Skill Card */
+/* ====== Skill Card ====== */
 .skill-card {
-  background: rgba(30, 30, 30, 0.6); /* Glass effect */
-  backdrop-filter: blur(12px); /* Glass blur */
+  background: rgba(30, 30, 30, 0.65); /* Glass effect */
+  backdrop-filter: blur(15px); /* Glass blur */
   border-radius: 20px;
-  padding: 30px 20px;
+  padding: 30px 25px;
   max-width: 250px;
   text-align: center;
-  box-shadow: 0 0 15px rgba(0, 212, 255, 0.3), 0 0 30px rgba(0, 212, 255, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* aligns items from top */
+  justify-content: flex-start;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3), 0 0 35px rgba(0, 212, 255, 0.15);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  cursor: default;
 }
 
 .skill-card:hover {
-  transform: translateY(-10px) scale(1.05);
-  box-shadow: 0 0 25px rgba(0, 212, 255, 0.6), 0 0 40px rgba(0, 212, 255, 0.3);
+  transform: translateY(-8px) scale(1.05); /* Soft hover lift */
 }
 
-/* Skill Logo */
+/* ====== Skill Logo ====== */
 .skilllogo {
-  width: 100px;             /* Uniform size */
+  width: 100px;
   height: 100px;
-  border-radius: 50%;       /* Circular logo */
-  object-fit: contain;       /* Maintains aspect ratio */
+  border-radius: 50%; /* Circular */
+  object-fit: contain;
   margin-bottom: 20px;
   border: 2px solid #00d4ff;
-  box-shadow: 0 0 10px rgba(0, 212, 255, 0.4);
-  background: rgba(255,255,255,0.05); /* subtle background for contrast */
-  padding: 10px;            /* Adds space inside the circle */
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.skill-card:hover .skilllogo {
+  transform: scale(1.1);
+}
 
-/* Skill Title */
+/* ====== Skill Title ====== */
 .h1 {
   font-size: 1.5rem;
   color: #00d4ff;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
   font-weight: 600;
+  transition: color 0.3s ease;
 }
 
-/* Skill Description */
+.skill-card:hover .h1 {
+  color: #38bdf8;
+}
+
+/* ====== Skill Description ====== */
 .h3 {
   font-size: 1rem;
   color: #cfcfcf;
   line-height: 1.6;
+  transition: color 0.3s ease;
 }
 
-/* Responsive */
+.skill-card:hover .h3 {
+  color: #e0e0e0;
+}
+
+/* ====== Skill Card Animation ====== */
+@keyframes fadeLiftSkills {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to all skill cards */
+.skill-card {
+  background: rgba(30, 30, 30, 0.65); /* Glass effect */
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px 25px;
+  max-width: 250px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3), 0 0 35px rgba(0, 212, 255, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0; /* start invisible */
+  animation: fadeLiftSkills 0.6s forwards;
+}
+
+/* Stagger animation for multiple skill cards */
+.skills-container .skill-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.skills-container .skill-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.skills-container .skill-card:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.skills-container .skill-card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.skills-container .skill-card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.skills-container .skill-card:nth-child(6) {
+  animation-delay: 0.6s;
+}
+/* Add more as needed for extra skills */
+
+/* ====== Responsive ====== */
 @media (max-width: 768px) {
   .skills-container {
-    gap: 20px;
+    gap: 25px;
   }
 
   .skill-card {
-    padding: 25px 15px;
+    padding: 25px 20px;
   }
 
   .skilllogo {

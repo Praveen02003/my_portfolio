@@ -1,0 +1,54 @@
+[
+    {
+        "title": "SmartCart — Personalized E-Commerce Platform",
+        "desc": "A React-based mini Amazon app with personalized recommendations and secure checkout.",
+        "tech": [
+            "React",
+            "JavaScript",
+            "CSS",
+            "HTML"
+        ],
+        "demo": "https://amazon-user-frontend.vercel.app/",
+        "github": "https://github.com/Praveen02003",
+        "image": "https://as1.ftcdn.net/v2/jpg/02/77/96/16/1000_F_277961699_gNAOzUIBISDC93C7AYzka6B6fZVakvBH.jpg"
+    },
+    {
+        "title": "TasteNow — Intelligent Food Ordering Platform",
+        "desc": "Mini food ordering app with real-time order tracking and restaurant suggestions.",
+        "tech": [
+            "React",
+            "Node.js",
+            "MongoDB",
+            "CSS"
+        ],
+        "demo": "https://foodcart-frontend-user.vercel.app/",
+        "github": "https://github.com/Praveen02003",
+        "image": "https://cdn.dribbble.com/userupload/12931095/file/original-f881c54155c304dc802b38d447da8da4.png?resize=400x0"
+    },
+    {
+        "title": "SmartCart Admin — Inventory & Sales Management System",
+        "desc": "Admin panel to manage products, track sales, and analyze user activity.",
+        "tech": [
+            "React",
+            "Node.js",
+            "MongoDB",
+            "CSS"
+        ],
+        "demo": "https://amazon-admin-frontend.vercel.app/",
+        "github": "https://github.com/Praveen02003",
+        "image": "https://cdn.dribbble.com/userupload/10923847/file/original-62ccdd55ceecd15f93e38bf58760334e.jpg?crop=0x0-1309x982&format=webp&resize=400x300&vertical=center"
+    },
+    {
+        "title": "TasteNow Admin — Restaurant Operations & Analytics Dashboard",
+        "desc": "Admin panel for restaurant operations, analytics, and order management.",
+        "tech": [
+            "React",
+            "Node.js",
+            "MongoDB",
+            "CSS"
+        ],
+        "demo": "https://foodcart-frontend-y24b.vercel.app/",
+        "github": "https://github.com/Praveen02003",
+        "image": "https://i.pinimg.com/originals/76/d5/48/76d548128f8576473c00cc7357900ac1.png"
+    }
+]

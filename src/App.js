@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes ,Route} from "react-router-dom";
 import { Skills } from './skills/Skills';
 import { Projects } from './projects/Projects';
 import { Contacts } from './contacts/Contacts';
+import { Footer } from './Footer/Footer';
 function App() {
   return (
     <div>
@@ -19,6 +20,7 @@ function App() {
           <Route path='/projects' element={<Projects/>}/>
           <Route path='/contact' element={<Contacts/>}/>
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );

@@ -1,141 +1,122 @@
-/* About.css */
-
-/* General Page Styling */
+/* ====== About Page Container ====== */
 .about-page {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  padding: 80px 60px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  background: radial-gradient(circle at 20% 20%, #0f172a, #1e293b 80%);
-  min-height: 100vh;
-  font-family: 'Poppins', 'Segoe UI', sans-serif;
-  color: #e0e0e0;
+  align-items: flex-start;
+  box-sizing: border-box;
 }
 
-/* About Me Card */
+/* ====== About Card ====== */
 .about-me {
-  background: radial-gradient(circle at 20% 20%, #0f172a, #1e293b 80%);
-  /* Dark card background */
-  max-width: 850px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 900px;
   width: 100%;
-  padding: 50px 40px;
-  border-radius: 25px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  animation: fadeInUp 1s ease forwards;
 }
 
-.about-me::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(135deg, #007bff, #00d4ff);
-  opacity: 0.05;
-  transform: rotate(45deg);
-}
-
-.about-me:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
-}
-
-/* Profile Image */
-.about-me img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid #00d4ff;
-  /* accent border */
-  margin-bottom: 25px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Heading Styles */
+/* ====== Heading ====== */
 .about-me h2 {
-  font-size: 2.5rem;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(90deg, #00bcd4, #4caf50);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 10px;
-  color: #00d4ff;
-  /* glowing accent */
-  font-weight: 600;
 }
 
-/* Divider under heading */
+/* ====== Divider ====== */
 .about-divider {
   width: 80px;
-  height: 4px;
-  background: #00d4ff;
-  margin: 15px auto 30px auto;
+  height: 3px;
+  background: #00bcd4;
   border-radius: 2px;
+  margin: 0 auto 30px;
 }
 
-/* Paragraph Styling */
+/* ====== Paragraph ====== */
 .about-me p {
-  font-size: 1.1rem;
   line-height: 1.8;
+  font-size: 16px;
+  color: #e0f7fa;
+  text-align: justify;
   margin-bottom: 25px;
-  color: #cfcfcf;
 }
 
-/* List Styling */
+/* ====== List ====== */
 .about-me ul {
-  list-style-type: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
-/* High-Class Project Badges */
-.about-me ul li {
-  background: rgba(40, 42, 60, 0.6);
-  /* Semi-transparent dark glass */
-  color: #ffffff;
-  padding: 12px 25px;
-  border-radius: 50px;
+.about-me li {
+  font-size: 16px;
+  color: #b2ebf2;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+}
+
+/* Bullet effect */
+.about-me li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #00bcd4;
+  font-weight: bold;
+}
+
+/* ====== Links ====== */
+.about-me a {
+  text-decoration: none;
+  color: #00bcd4;
   font-weight: 500;
-  font-size: 1rem;
-  backdrop-filter: blur(10px);
-  /* Glass blur effect */
-  border: 1px solid rgba(0, 212, 255, 0.5);
-  /* Soft neon border */
-  box-shadow: 0 0 10px rgba(0, 212, 255, 0.4),
-    0 0 20px rgba(0, 212, 255, 0.2);
-  /* Neon glow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effect for interactivity */
-.about-me ul li:hover {
-  transform: translateY(-4px) scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.6),
-    0 0 30px rgba(0, 212, 255, 0.3);
-  background: rgba(0, 212, 255, 0.15);
-  /* Slight neon highlight */
+.about-me a:hover {
+  color: #4caf50;
+  transform: translateX(3px);
 }
 
+/* ====== Animation ====== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
 
-/* Responsive */
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ====== Responsive Design ====== */
 @media (max-width: 768px) {
+  .about-page {
+    padding: 50px 20px;
+  }
+
   .about-me {
-    padding: 35px 25px;
+    padding: 30px 20px;
   }
 
   .about-me h2 {
-    font-size: 2rem;
+    font-size: 26px;
   }
 
-  .about-me ul {
-    gap: 15px;
-  }
-
-  .about-me ul li {
-    padding: 8px 15px;
-    font-size: 0.95rem;
+  .about-me p {
+    font-size: 15px;
   }
 }
