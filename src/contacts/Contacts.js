@@ -16,7 +16,7 @@ export const Contacts = () => {
         </div>
         <div className="contact-info">
           <h1>Contact Me</h1>
-          <h3>Location: Madurai, India</h3>
+          <h3>Location : India</h3>
           <h3>Email: praveen.aeropilot@gmail.com</h3>
           <h3>Phone: +91 93605 85253</h3>
 

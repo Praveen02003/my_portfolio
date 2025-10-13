@@ -16,7 +16,7 @@ export const Home = () => {
                     <h2 className="home-intro-colorful">Hello, my name is</h2>
                     <div className="home-divider-colorful"></div>
                     <h1 className="home-name-colorful">Praveen</h1>
-                    <h2 className="home-title-colorful">Web Developer</h2>
+                    <h2 className="home-title-colorful">Full Stack Developer</h2>
 
                     <div className="home-contact-colorful">
                         <div className="home-contact-item-colorful">
