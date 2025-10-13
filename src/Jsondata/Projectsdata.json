@@ -3,10 +3,12 @@
         "title": "SmartCart — Personalized E-Commerce Platform",
         "desc": "A React-based mini Amazon app with personalized recommendations and secure checkout.",
         "tech": [
-            "React",
-            "JavaScript",
+            "HTML",
             "CSS",
-            "HTML"
+            "React",
+            "Node.js",
+            "Express.js",
+            "MongoDB"
         ],
         "demo": "https://amazon-user-frontend.vercel.app/",
         "github": "https://github.com/Praveen02003",
@@ -16,10 +18,13 @@
         "title": "TasteNow — Intelligent Food Ordering Platform",
         "desc": "Mini food ordering app with real-time order tracking and restaurant suggestions.",
         "tech": [
+            "HTML",
+            "CSS",
             "React",
             "Node.js",
-            "MongoDB",
-            "CSS"
+            "Express.js",
+            "MongoDB"
+            
         ],
         "demo": "https://foodcart-frontend-user.vercel.app/",
         "github": "https://github.com/Praveen02003",
@@ -29,10 +34,12 @@
         "title": "SmartCart Admin — Inventory & Sales Management System",
         "desc": "Admin panel to manage products, track sales, and analyze user activity.",
         "tech": [
+            "HTML",
+            "CSS",
             "React",
             "Node.js",
-            "MongoDB",
-            "CSS"
+            "Express.js",
+            "MongoDB"
         ],
         "demo": "https://amazon-admin-frontend.vercel.app/",
         "github": "https://github.com/Praveen02003",
@@ -42,10 +49,12 @@
         "title": "TasteNow Admin — Restaurant Operations & Analytics Dashboard",
         "desc": "Admin panel for restaurant operations, analytics, and order management.",
         "tech": [
+            "HTML",
+            "CSS",
             "React",
             "Node.js",
-            "MongoDB",
-            "CSS"
+            "Express.js",
+            "MongoDB"
         ],
         "demo": "https://foodcart-frontend-y24b.vercel.app/",
         "github": "https://github.com/Praveen02003",
