@@ -10,7 +10,7 @@
             "Express.js",
             "MongoDB"
         ],
-        "demo": "https://amazon-user-frontend.vercel.app/",
+        "demo": "https://amazon-user-frontend.onrender.com",
         "github": "https://github.com/Praveen02003",
         "image": "https://as1.ftcdn.net/v2/jpg/02/77/96/16/1000_F_277961699_gNAOzUIBISDC93C7AYzka6B6fZVakvBH.jpg"
     },
@@ -26,7 +26,7 @@
             "MongoDB"
             
         ],
-        "demo": "https://foodcart-frontend-user.vercel.app/",
+        "demo": "https://foodcart-frontend-user.onrender.com",
         "github": "https://github.com/Praveen02003",
         "image": "https://cdn.dribbble.com/userupload/12931095/file/original-f881c54155c304dc802b38d447da8da4.png?resize=400x0"
     },
@@ -41,7 +41,7 @@
             "Express.js",
             "MongoDB"
         ],
-        "demo": "https://amazon-admin-frontend.vercel.app/",
+        "demo": "https://amazon-admin-frontend.onrender.com",
         "github": "https://github.com/Praveen02003",
         "image": "https://cdn.dribbble.com/userupload/10923847/file/original-62ccdd55ceecd15f93e38bf58760334e.jpg?crop=0x0-1309x982&format=webp&resize=400x300&vertical=center"
     },
@@ -56,7 +56,7 @@
             "Express.js",
             "MongoDB"
         ],
-        "demo": "https://foodcart-frontend-y24b.vercel.app/",
+        "demo": "https://foodcart-frontend-0zwb.onrender.com",
         "github": "https://github.com/Praveen02003",
         "image": "https://i.pinimg.com/originals/76/d5/48/76d548128f8576473c00cc7357900ac1.png"
     }

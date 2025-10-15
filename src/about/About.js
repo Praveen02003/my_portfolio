@@ -22,11 +22,11 @@ export const About = () => {
         </p>
         <ul>
           <li>User panel</li>
-          <li><a href="https://foodcart-frontend-user.vercel.app/">SmartCart — Personalized E-Commerce Platform</a></li>
-          <li><a href="https://amazon-user-frontend.vercel.app/">TasteNow — Intelligent Food Ordering Platform</a></li>
+          <li><a href="https://amazon-user-frontend.onrender.com">SmartCart — Personalized E-Commerce Platform</a></li>
+          <li><a href="https://foodcart-frontend-user.onrender.com">TasteNow — Intelligent Food Ordering Platform</a></li>
           <li>Admin panel</li>
-          <li><a href="https://foodcart-frontend-y24b.vercel.app/">SmartCart Admin — Inventory & Sales Management System</a></li>
-          <li><a href="https://amazon-admin-frontend.vercel.app/">TasteNow Admin — Restaurant Operations & Analytics Dashboard</a></li>
+          <li><a href="https://amazon-admin-frontend.onrender.com">SmartCart Admin — Inventory & Sales Management System</a></li>
+          <li><a href="https://foodcart-frontend-0zwb.onrender.com">TasteNow Admin — Restaurant Operations & Analytics Dashboard</a></li>
         </ul>
       </div>
     </div>
